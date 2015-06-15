@@ -1,0 +1,395 @@
+/* ===============================
+   Author: Robson Xavier
+   Date:   10/06/2015
+   
+
+   =============================== */
+
+/* General */
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #2e2e31;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+}
+
+.container{
+  padding: 30px 15px;
+}
+
+/* Typography */
+
+h1, h2{
+  line-height: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+
+h1{
+  font-size: 32px;
+}
+
+h2{
+  font-size: 24px;
+}
+
+h3{
+  margin: 0;
+}
+
+p{
+  
+  line-height: 25px;
+  margin:0 0 15px;
+  font-size: 16px;
+}
+
+p em{
+  font-style: italic;
+}
+
+
+
+/* Grow */
+a:link, a:visited {
+  text-decoration: none;
+  font-weight: normal;
+  color: #52b9ba;
+  vertical-align: middle;
+  display: inline-block;
+/*  transform: translateZ(0);*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: all;
+  padding: 3px;
+}
+
+a:hover,
+a:focus,
+a:active {
+  background: #52b9ba;
+  color: white;
+  transform: scale(1.1);
+}
+
+ul{
+  margin:0 0 15px 0;
+  padding: 0 0 0 25px;
+  list-style: square;
+}
+
+/* Header */
+#header{
+  background: black url('../images/carbon-bg.png') top left repeat;
+}
+
+
+/* LOGO */
+#header #logo{
+  text-indent: -9999px;
+  background: url('../images/logo.png') center center no-repeat;
+  margin: 0;
+  padding: 0;
+  width: 232px;
+  height: 81px;
+  float: left;
+  
+}
+
+#header #logo:hover{
+  background: url('../images/logo-hover.png') center center no-repeat;
+}
+
+/* MENU */
+#header nav {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#header nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  line-height: 81px;
+}
+
+#header nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#header nav ul li a:link, #header nav ul li a:visited{
+  color:white;
+  transform: translateZ(0);
+  padding:  0 10px 15px;
+  background: none;
+  display: inline;
+  transition: border-bottom 0.5ms ease-in-out;
+  font-weight: normal;
+  border-bottom: 1px solid black;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+#header nav ul li a:hover {
+  border-bottom: white solid 1px;
+  font-weight: 600;
+}
+
+#header nav ul li a.link-active{
+  border-bottom: white solid 1px;
+  font-weight: 600;
+}
+
+/* Hero */
+
+#hero {
+  background: black url('../images/bg-hero.jpg') center -50% no-repeat;
+  background-attachment: fixed;
+  color: white;
+  height: 500px;
+  position: relative;
+  font-family: 'Titillium Web', sans-serif;
+  
+}
+
+
+
+#hero-text{
+  position: absolute;
+  top: 130px;
+  text-shadow: 2px 2px black;
+}
+
+#hero-text h1{
+  font-size: 50px;
+  line-height: 80%;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+#hero-text p.lead{
+  font-weight: 700;
+  font-size: 23px;
+}
+@media (max-width: 320px) {
+  #hero-text h1{
+    font-size: 30px;
+  }
+  #hero-text p.lead{
+  font-size: 20px;
+  }
+}
+/* Services */
+
+.service{
+  min-height:450px;
+  padding: 15px;
+}
+
+.service:hover{
+/*  background-color: #f5f5f5;*/
+/*  border: 1px solid #c5d3da;*/
+}
+
+.service h2{
+  text-align: center;
+  color: #455a64;
+}
+
+.service img{
+  height: 128px;
+  width: 128px;
+  display: block;
+  margin: 15px auto;
+}
+
+/* Techs */
+
+#techs{
+  list-style: none;
+  padding: 0;
+  
+}
+
+#techs li{
+  display: inline-block;
+  margin: 0 15px;
+  text-indent: -9999px;
+  
+}
+
+#net{
+  width: 218px;
+  height: 96px;
+  background: url('../images/techs.gif') -7px -110px no-repeat;  
+}
+#net:hover{
+  background: url('../images/techs.gif') -7px -4px no-repeat;  
+}
+
+#java{
+  width: 165px;
+  height: 96px;
+  background: url('../images/techs.gif') -296px -110px no-repeat;  
+}
+#java:hover{
+  background: url('../images/techs.gif') -296px -4px no-repeat;  
+}
+
+#php{
+  width: 168px;
+  height: 96px;
+  background: url('../images/techs.gif') -562px -110px no-repeat;  
+}
+#php:hover{
+  background: url('../images/techs.gif') -562px -4px no-repeat;  
+}
+
+#android{
+  width: 208px;
+  height: 96px;
+  background: url('../images/techs.gif') -798px -110px no-repeat;  
+}
+#android:hover{
+  background: url('../images/techs.gif') -798px -4px no-repeat;  
+}
+
+#mercurial{
+  width: 191px;
+  height: 96px;
+  background: url('../images/techs.gif') -1060px -110px no-repeat;  
+}
+#mercurial:hover{
+  background: url('../images/techs.gif') -1060px -4px no-repeat;  
+}
+
+
+
+/* Footer */
+#rodape{
+  color:white;
+  background: black url('../images/carbon-bg.png') top left repeat;
+  padding: 15px 0;
+  height: 100%;
+}
+
+#rodape #copy {
+  text-align: center;
+}
+
+
+/* Projetos */
+
+#projetos{
+  background: #f4f4f4;
+}
+
+.projeto{
+  padding: 30px 0;
+}
+
+.projeto-img{
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #c1c1c1;
+}
+
+.projeto-descricao h2{
+  margin: 5px 0;
+}
+.projeto-descricao p{
+  font-size: 14px;
+}
+
+/* Bounce To Bottom */
+.hvr-bounce-to-bottom:link,.hvr-bounce-to-bottom:visited {
+  background-color: #e3e3e3;
+  color: #242424;
+  padding:15px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #52b9ba;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* DOCUMENTOS */
+.lista-documentos {
+  list-style: none;
+}
+
+.cliente:hover{
+  background: none;
+  transform: scale(.95);
+}
+
+.cliente img{
+  display: block;
+  margin: 0 auto;
+}
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
